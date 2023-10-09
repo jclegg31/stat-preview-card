@@ -39,6 +39,7 @@ body {
   align-items: center;
   max-width: 375px;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .main-image {
@@ -49,8 +50,8 @@ body {
 
 .main-image img {
   max-width: 100%;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+  /* border-top-right-radius: 10px;
+  border-top-left-radius: 10px; */
   display: block;
   height: auto;
 }
@@ -150,10 +151,11 @@ body {
   .main-image::before {
     content: '';
     position: absolute;
-    top: 0;
+    /* top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: 0; */
+    inset: 0;
     background-color: var(--clr-accent-softviolet);
     opacity: 0.5;
     border-top-left-radius: 0px;
@@ -168,9 +170,10 @@ body {
   }
 
   .main-content p {
-    margin-left: 0;
+    /* margin-left: 0;
     margin-right: 35px;
-    margin-bottom: 60px;
+    margin-bottom: 60px; */
+    margin: 0 35px 60px 0;
     font-size: 0.8rem;
     line-height: 1.3rem;
   }
